@@ -17,6 +17,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: auto;
+}
+
 svg {
   display: block;
   width: 100%;
@@ -26,3 +30,31 @@ svg {
 .percentages {
   max-height: 758.7px;
 }
+
+.sticker-stroke {
+  stroke: #dcd0c0;
+  stroke-width: 5px;
+  stroke-dasharray: 0, 785;
+  animation: draw 1s linear forwards;
+}
+
+@keyframes draw {
+
+  0% {
+    stroke-dasharray: 0, 785;
+  }
+
+  100% {
+    stroke-dasharray: 787, 785;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    max-width: 60rem;
+    margin: 0;
+  }
