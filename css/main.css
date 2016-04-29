@@ -19,6 +19,7 @@ html {
 
 body {
   margin: auto;
+  padding: 0em;
 }
 
 svg {
@@ -38,23 +39,40 @@ svg {
   animation: draw 1s linear forwards;
 }
 
+.bubbles {
+  animation: float 6s linear forwards;
+}
+
 @keyframes draw {
 
   0% {
-    stroke-dasharray: 0, 785;
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
   }
 
   100% {
-    stroke-dasharray: 787, 785;
+    top: 0px;
   }
 }
 
+@ keyframes float {
 
+  0% {
+
+  }
+
+  100% {
+
+  }
+}
 
 
 @media only screen and (min-width: 60em) {
 
   body {
     max-width: 60rem;
-    margin: 0;
+    margin: auto;
   }
