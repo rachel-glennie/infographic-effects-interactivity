@@ -19,7 +19,7 @@ html {
 
 body {
   margin: auto;
-  padding: 0em;
+  padding: 0;
 }
 
 svg {
@@ -43,10 +43,29 @@ svg {
   animation: float 6s linear forwards;
 }
 
+.energy {
+  transition: all 300ms ease-in;
+}
+
+.energy-animate {
+  fill: #db9e60;
+}
+
 @keyframes draw {
 
   0% {
-    top: 0px;
+    stroke-dasharray: 0, 785;
+  }
+
+  100% {
+    stroke-dasharray: 785, 785;
+  }
+}
+
+@keyframes float {
+
+  0% {
+    top: 0;
   }
 
   50% {
@@ -54,21 +73,124 @@ svg {
   }
 
   100% {
-    top: 0px;
+    top: 0;
   }
 }
 
-@ keyframes float {
-
-  0% {
-
-  }
-
-  100% {
-
-  }
+.st0 {
+  fill:#dcd0c0;
+  stroke:#4e4f56;
+  stroke-width:6.8902;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
 }
 
+.st1 {
+  fill:#9b3d3b;
+  stroke:#4e4f56;
+  stroke-width:7.0053;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st2m {
+  fill:#b1928a;
+  stroke:#4e4f56;
+  stroke-width:7.0053;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st3 {
+  fill:none;
+}
+
+.st4 {
+  fill:#dcd0c0;
+}
+
+.st5 {
+  fill:#db625d;
+}
+
+.st6 {
+  fill:#db9e60;
+  stroke:#4e4f56;
+  stroke-width:7.0053;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st7 {
+  fill:none;
+  stroke:#dcbf96;
+  stroke-width:4.2446;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st8 {
+  fill:#4e4f56;
+  stroke:#4e4f56;
+  stroke-width:7.0053;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st9 {
+  fill:#dcbf96;
+  stroke:#4e4f56;
+  stroke-width:7.0053;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st10 {
+  fill:#4e4f56;
+}
+
+.st11 {
+  fill:#dcd0c0;
+  stroke:#4e4f56;
+  stroke-width:7.76;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st12 {
+  fill:#9b3d3b;
+  stroke:#4e4f56;
+  stroke-width:7.3066;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st13 {
+  fill:#dcd0c0;
+  stroke:#4e4f56;
+  stroke-width:7.3066;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+.st14 {
+  fill:#db9e60;
+  stroke:#4e4f56;
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
 
 @media only screen and (min-width: 60em) {
 
@@ -76,3 +198,5 @@ svg {
     max-width: 60rem;
     margin: auto;
   }
+
+}
